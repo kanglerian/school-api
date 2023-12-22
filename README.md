@@ -70,3 +70,13 @@ Berikut adalah langkah-langkah untuk membuat docker image dan push ke Repository
   - Ganti `nama-pengguna` sesuai dengan akun repository anda di Docker Hub.
   - Ganti `nama-repository` sesuai dengan nama repository yang anda inginkan.
   - Ganti `versi` sesuai dengan versi yang anda inginkan.
+
+
+## Penulis
+
+Penulis: Lerian Febriana, A.Md.Kom
+Programmer: Lerian Febriana, A.Md.Kom
+
+  - [Website](https://kanglerian.vercel.app)
+  - [Instagram](https://instagram.com/kanglerian)
+  - [Github](https://github.com/kanglerian)
