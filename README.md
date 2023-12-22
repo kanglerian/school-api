@@ -13,8 +13,8 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan aplikasi:
 
 2. **Menjalankan Aplikasi:**
 
-  - Buatkan sebuah folder project dengan nama `Project-School-API` dan masuk ke directory project.
-  - Lalu buatkan 1 file dengan nama `docker-compose.yml` dengan isi code seperti berikut ini.
+  - Buat folder proyek dengan nama `Project-School-API` dan pindah ke direktori proyek.
+  - Buat file `docker-compose.yml` dengan konten berikut:
 
 
       ```yml
@@ -28,49 +28,45 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan aplikasi:
           restart: unless-stopped
       ```
 
-  - Ganti `<version>` dengan tag yang ada di repository `Docker Hub`.
-  - Lalu jalankan dengan perintah `docker-compose up -d`.
+  - Ganti `<version>` dengan tag yang tersedia di Docker Hub.
+  - Jalankan perintah `docker-compose up -d` untuk menjalankan kontainer.
 
 ## Cara Pembuatan Docker Image
 
-Berikut adalah langkah-langkah untuk membuat docker image dan push ke Repository Docker:
+Berikut adalah langkah-langkah untuk membuat docker image dan mengunggahnya ke Docker Hub:
 
 1. **Persiapan Pembuatan Tag Repository:**
 
-  - Lakukan proses ini dengan menjalankan perintah:
+  - Build docker image dengan perintah:
 
 
     ```bash
     docker build -t name-docker-images .
     ```
 
-  - Ganti `name-docker-images` sesuai dengan yang diinginkan.
-  - Lakukan perintah `tag` untuk persiapan push ke repository docker.
+  - Ganti `name-docker-images` sesuai keinginan Anda.
+  - Gunakan perintah `tag` untuk menyiapkan image untuk diunggah:
 
 
     ```bash
     docker tag name-docker-images nama-pengguna/nama-repository:versi
     ```
 
-  - Ganti `name-docker-images` sesuai dengan yang diinginkan.
-  - Ganti `nama-pengguna` sesuai dengan akun repository anda di Docker Hub.
-  - Ganti `nama-repository` sesuai dengan nama repository yang anda inginkan.
-  - Ganti `versi` sesuai dengan versi yang anda inginkan.
+  - Ganti `name-docker-images` sesuai keinginan Anda.
+  - Ganti `nama-pengguna` dengan akun Docker Hub Anda.
+  - Ganti `nama-repository` dengan nama repository yang Anda inginkan.
+  - Ganti `versi` dengan versi yang diinginkan.
 
 2. **Persiapan Push Ke Repository:**
 
-  - Lakukan proses ini dengan menjalankan perintah:
+  - Unggah image ke Docker Hub dengan perintah:
 
 
     ```bash
     docker push nama-pengguna/nama-repositori:versi
     ```
 
-  - Ganti `<name-docker-images>` sesuai dengan yang diinginkan.
-  - Ganti `nama-pengguna` sesuai dengan akun repository anda di Docker Hub.
-  - Ganti `nama-repository` sesuai dengan nama repository yang anda inginkan.
-  - Ganti `versi` sesuai dengan versi yang anda inginkan.
-
+  - Ganti `nama-pengguna`, `nama-repository`, dan `versi` sesuai keinginan Anda.
 
 ## Penulis
 
