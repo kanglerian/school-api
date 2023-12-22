@@ -8,13 +8,13 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan aplikasi:
 
 1. **Prasyarat:**
 
-   - Pastikan Anda sudah menginstall `NodeJS` di server atau local machine.
-   - Pastikan Anda sudah menginstall `Docker CLI`.
+  - Pastikan Anda sudah menginstall `NodeJS` di server atau local machine.
+  - Pastikan Anda sudah menginstall `Docker CLI`.
 
 2. **Menjalankan Aplikasi:**
 
-   - Buatkan sebuah folder project dengan nama `Project-School-API` dan masuk ke directory project.
-   - Lalu buatkan 1 file dengan nama `docker-compose.yml` dengan isi code seperti berikut ini.
+  - Buatkan sebuah folder project dengan nama `Project-School-API` dan masuk ke directory project.
+  - Lalu buatkan 1 file dengan nama `docker-compose.yml` dengan isi code seperti berikut ini.
 
 
       ```yml
@@ -28,8 +28,8 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan aplikasi:
           restart: unless-stopped
       ```
 
-   - Ganti `<version>` dengan tag yang ada di repository `Docker Hub`.
-   - Lalu jalankan dengan perintah `docker-compose up -d`.
+  - Ganti `<version>` dengan tag yang ada di repository `Docker Hub`.
+  - Lalu jalankan dengan perintah `docker-compose up -d`.
 
 ## Cara Pembuatan Docker Image
 
@@ -44,10 +44,11 @@ Berikut adalah langkah-langkah untuk membuat docker image dan push ke Repository
     docker build -t name-docker-images .
     ```
 
-   - Ganti `name-docker-images` sesuai dengan yang diinginkan.
-   - Lakukan perintah `tag` untuk persiapan push ke repository docker.
+  - Ganti `name-docker-images` sesuai dengan yang diinginkan.
+  - Lakukan perintah `tag` untuk persiapan push ke repository docker.
 
-    ```
+
+    ```bash
     docker tag name-docker-images nama-pengguna/nama-repository:versi
     ```
 
