@@ -17,16 +17,16 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan aplikasi:
    - Lalu buatkan 1 file dengan nama `docker-compose.yml` dengan isi code seperti berikut ini.
 
 
-   ```yml
-   version: "3.7"
-   services:
-     web:
-       container_name: school_api_container
-       image: kanglerian/school-api:<version>
-       ports:
-         - "8883:8883"
-       restart: unless-stopped
-   ```
+      ```yml
+      version: "3.7"
+      services:
+        web:
+          container_name: school_api_container
+          image: kanglerian/school-api:<version>
+          ports:
+            - "8883:8883"
+          restart: unless-stopped
+      ```
 
    - Ganti `<version>` dengan tag yang ada di repository `Docker Hub`.
    - Lalu jalankan dengan perintah `docker-compose up -d`.
@@ -47,7 +47,7 @@ Berikut adalah langkah-langkah untuk membuat docker image dan push ke Repository
    - Ganti `name-docker-images` sesuai dengan yang diinginkan.
    - Lakukan perintah `tag` untuk persiapan push ke repository docker.
 
-    ```bash
+    ```
     docker tag name-docker-images nama-pengguna/nama-repository:versi
     ```
 
