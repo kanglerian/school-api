@@ -15,7 +15,7 @@ Berikut adalah langkah-langkah untuk menginstal dan menjalankan aplikasi:
 
    - Buatkan sebuah folder project dengan nama `Project-School-API` dan masuk ke directory project.
    - Lalu buatkan 1 file dengan nama `docker-compose.yml` dengan isi code seperti berikut ini.
-   
+
 
    ```yml
    version: "3.7"
@@ -41,17 +41,17 @@ Berikut adalah langkah-langkah untuk membuat docker image dan push ke Repository
 
 
     ```bash
-    docker build -t <name-docker-images> .
+    docker build -t name-docker-images .
     ```
 
-   - Ganti `<name-docker-images>` sesuai dengan yang diinginkan.
+   - Ganti `name-docker-images` sesuai dengan yang diinginkan.
    - Lakukan perintah `tag` untuk persiapan push ke repository docker.
 
     ```bash
-    docker tag <name-docker-images> nama-pengguna/nama-repository:versi
+    docker tag name-docker-images nama-pengguna/nama-repository:versi
     ```
 
-  - Ganti `<name-docker-images>` sesuai dengan yang diinginkan.
+  - Ganti `name-docker-images` sesuai dengan yang diinginkan.
   - Ganti `nama-pengguna` sesuai dengan akun repository anda di Docker Hub.
   - Ganti `nama-repository` sesuai dengan nama repository yang anda inginkan.
   - Ganti `versi` sesuai dengan versi yang anda inginkan.
